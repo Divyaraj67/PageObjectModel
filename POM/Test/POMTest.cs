@@ -40,7 +40,8 @@ namespace POM.Test
                        And:User clicks on enter button
                        Then: User should be redirected to checkout two page
                        When: User clicks finish button
-                       Then:User should be redirected to checkout complete page")] 
+                       Then:User should be redirected to checkout complete page")]
+        [Retry(tryCount:2)]
         public void TestMethod()
         {
             string expectedAfterLoginUrl = "https://www.saucedemo.com/inventory.html";
